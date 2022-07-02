@@ -1,7 +1,9 @@
 module.exports = ({ env }) => ({
-  url: env("MY_HEROKU_URL"),
   proxy: true,
+  url: env('https://test-starpi-heroku.herokuapp.com/'),
   app: {
-    keys: env.array("APP_KEYS"),
+    keys: env.array('APP_KEYS')
   },
-});
+})
+
+
